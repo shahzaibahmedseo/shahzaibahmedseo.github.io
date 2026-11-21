@@ -141,6 +141,18 @@ h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(2.7rem,6.4vw,4.6r
 .sc-tags span.tech{background:var(--soft);color:var(--acc2);border-color:transparent}
 .sc-prog{height:3px;background:var(--line);border-radius:2px;margin-bottom:20px;overflow:hidden}
 .sc-prog span{display:block;height:100%;width:0;background:var(--acc)}
+/* audit cards */
+.audits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.a-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 20px;display:flex;flex-direction:column;gap:7px;transition:transform .3s,border-color .3s}
+.a-card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.a-card h3{font-family:'Space Grotesk';font-size:1.07rem;font-weight:700}
+.a-sec{color:var(--acc);font-weight:800;font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase}
+.a-dom{color:var(--ink);font-weight:700;font-size:.88rem}
+.a-met{color:var(--muted);font-size:.9rem;flex:1}
+.a-link{font-weight:800;color:var(--acc2);font-size:.9rem;margin-top:6px}
+.a-link:hover{text-decoration:underline}
+@media(max-width:1000px){.audits-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.audits-grid{grid-template-columns:1fr}}
 /* capabilities */
 .caps{border-top:1px solid var(--line)}
 .cap{border-bottom:1px solid var(--line)}
@@ -207,6 +219,7 @@ footer .sub{color:#A9B8AE;max-width:560px;margin-top:16px}
       <a class="logo" href="#top"><span class="logo-mark">SA</span>SHAHZAIB <span>AHMED</span></a>
       <ul>
         <li><a href="#work">Work</a></li>
+        <li><a href="#audits">Audits</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#about">About</a></li>
@@ -218,6 +231,7 @@ footer .sub{color:#A9B8AE;max-width:560px;margin-top:16px}
   </div>
   <div class="mnav" id="mnav">
     <a href="#work">Work</a>
+    <a href="#audits">Audits</a>
     <a href="#services">Services</a>
     <a href="#process">Process</a>
     <a href="#about">About</a>
@@ -293,6 +307,27 @@ footer .sub{color:#A9B8AE;max-width:560px;margin-top:16px}
             <a class="btn primary" id="scGo" href="https://unitedrenewables.co.uk" target="_blank" rel="noopener">Visit Live Site →</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audits" style="padding-top:30px">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="kicker">Audit Reports</div>
+        <h2>Technical SEO audits, delivered as full reports</h2>
+        <p>Eight client audits with before-and-after reviews, health scores and issue-by-issue fixes. The full reports are here, exactly as delivered.</p>
+      </div>
+      <div class="audits-grid">
+      <div class="a-card reveal"><div class="a-sec">Travel &amp; Tours · UK</div><h3>Ajwa Tours</h3><div class="a-dom">ajwatour.co.uk</div><p class="a-met">Site health 69 at audit · 248 issues identified and worked through in a before-and-after optimisation review.</p><a class="a-link" href="reports/ajwa-tours-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d1"><div class="a-sec">Chauffeur Services</div><h3>Chauffeur Me Travel</h3><div class="a-dom">chauffeur-me-travel.com</div><p class="a-met">Site health 68 at audit · 616 issues across 515 crawled URLs, addressed in optimisation.</p><a class="a-link" href="reports/chauffeur-me-travel-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d2"><div class="a-sec">Travel Agency · UK</div><h3>F&amp;S Travel</h3><div class="a-dom">fstravel.co.uk</div><p class="a-met">Ahrefs Site Audit · health score 100 · 248 issues reviewed, with site speed optimisation.</p><a class="a-link" href="reports/fs-travel-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d3"><div class="a-sec">Facility Services · Netherlands</div><h3>Faciliserv</h3><div class="a-dom">faciliserv.nl</div><p class="a-met">Technical SEO plus AI visibility: HTTP 429, duplicate meta and oversized image issues resolved.</p><a class="a-link" href="reports/faciliserv-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal"><div class="a-sec">Food &amp; Grocery · UK</div><h3>Punjab Exotic Foods</h3><div class="a-dom">punjabexoticfoods.co.uk</div><p class="a-met">Site health 89 at audit · 174 issues, including duplicate meta descriptions and image weight.</p><a class="a-link" href="reports/punjab-exotic-foods-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d1"><div class="a-sec">Document Services</div><h3>S&amp;S Documents</h3><div class="a-dom">sandsdocument.com</div><p class="a-met">Site health 89 at audit · 644 issues across 778 crawled URLs · PageSpeed review included.</p><a class="a-link" href="reports/sands-documents-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d2"><div class="a-sec">Stone &amp; Surfaces · UK</div><h3>Zenstone</h3><div class="a-dom">zenstone.co.uk</div><p class="a-met">Health score 99 maintained · warnings cut from 837 to 731 and errors from 17 to 14.</p><a class="a-link" href="reports/zenstone-seo-audit.docx" download>Download the Full Report ↓</a></div>
+<div class="a-card reveal d3"><div class="a-sec">Villas &amp; Property · UK</div><h3>Zenvillas</h3><div class="a-dom">zenvillas.co.uk</div><p class="a-met">Site health 93 at audit · 137 issues across technical, URL security and metadata fixes.</p><a class="a-link" href="reports/zenvillas-seo-audit.docx" download>Download the Full Report ↓</a></div>
+
       </div>
     </div>
   </section>
